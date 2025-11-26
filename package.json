@@ -1,16 +1,18 @@
 {
+  "homepage": "https://github.com/shaikabdulsajidali/My-Portfolio",
   "name": "My-Portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/shaikabdulsajidali/My-Portfolio",
+  
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
